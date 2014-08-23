@@ -9,12 +9,12 @@ div(class: 'navbar navbar-default navbar-static-top', role: 'navigation') {
             }
             a(class: 'navbar-brand', href: 'index.html') {
                 i(class: 'fa fa-star') {}
-                yield ' Groovy'
+                yield ' tursfriend'
             }
         }
         div(class: 'navbar-collapse collapse') {
             ul(class: 'nav navbar-nav navbar-right') {
-                menu['Groovy'].each { menuItem ->
+                menu['tursfriend'].each { menuItem ->
                     li(class: category == menuItem.name ? 'active' : '') { a(href: menuItem.link, menuItem.name) }
                 }
                 li {

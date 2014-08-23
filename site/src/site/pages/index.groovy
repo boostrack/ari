@@ -1,7 +1,7 @@
 import model.Event
 
 layout 'layouts/main.groovy', true,
-        pageTitle: 'The Groovy programming language',
+        pageTitle: 'The tursfriend company',
         mainContent: contents {
             div(id: 'band', class: 'band') {
 
@@ -10,7 +10,7 @@ layout 'layouts/main.groovy', true,
                 include unescaped: 'html/index.html'
 
                 section(class: "row colset-3-article") {
-                    h1 { strong "Groovy events you shouldn't miss!" }
+                    h1 { strong "tursfriend events you shouldn't miss!" }
                     allEvents.keySet().take(3).each { String eventName ->
                         Event event = allEvents[eventName]
                         article {

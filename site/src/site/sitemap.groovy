@@ -1,10 +1,10 @@
 menu {
-    group('Groovy') {
-        item 'Learn',                       'learn.html'
-        item 'Documentation',               'documentation.html'
-        item 'Download',                    'download.html'
-        item 'Community',                   'community.html'
-        item 'Ecosystem',                   'ecosystem.html'
+    group('tursfriend') {
+        item 'Services',                       'learn.html'
+        item 'know-how',               'documentation.html'
+        item 'Clients',                    'download.html'
+        item 'Events',                   'community.html'
+        item 'About',                   'ecosystem.html'
     }
 
     group('About') {
