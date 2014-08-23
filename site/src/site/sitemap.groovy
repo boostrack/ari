@@ -4,181 +4,32 @@ menu {
         item 'know-how',               'documentation.html'
         item 'Clients',                    'download.html'
         item 'Events',                   'community.html'
-        item 'About',                   'ecosystem.html'
     }
 
     group('About') {
-        item 'Contributing',                'contribute.html'
-        item 'Source code',                 'https://github.com/groovy/groovy-core'
         item 'Build status',                'buildstatus.html'
-        item 'Books',                       'learn.html#books'
         item 'Sponsors',                    'sponsors.html'
         item 'FAQ',                         'faq.html'
         item 'Search',                      'search.html'
     }
 
     group('Socialize') {
-        item 'Discuss on the mailing-list', 'mailing-lists.html',                               'fa-envelope'
-        item 'Groovy Weekly newsletter',    'groovy-weekly.html',                               'fa-envelope-o'
         item 'Groovy on Twitter',           'https://twitter.com/hashtag/groovylang',           'fa-twitter'
         item 'Events and conferences',      'events.html',                                      'fa-calendar'
-        item 'Source code on GitHub',       'https://github.com/groovy/groovy-core',            'fa-github'
-        item 'Report issues in Jira',       'contribute.html#reporting-issues',                 'fa-bug'
-        item 'Google+ Groovy Page',         'https://google.com/+groovy',                       'fa-google-plus'
-        item 'Google+ Groovy Community',    'http://bit.ly/g-community',                        'fa-google-plus'
-        item 'Stack Overflow questions',    'http://stackoverflow.com/questions/tagged/groovy', 'fa-stack-overflow'
+        item 'Google+ tursfriend Page',     'https://google.com/+groovy',                       'fa-google-plus'
+        item 'Facebook tursfriend',         'http://www.facebook.com/tursfriend',               'fa-facebook'
     }
 }
 
 pages {
     page 'index', 'index', [allEvents: allEvents]
-    page 'search', 'search', [category: 'Search']
-    page 'ecosystem', 'ecosystem', [category: 'Ecosystem', ecosys: ecosystem]
-    page 'learn', 'learn', [category: 'Learn', docSections: documentationSections, allBooks: library, videos: videos]
-    page 'documentation', 'documentation', [category: 'Documentation', docSections: documentationSections, allDocVersions: allDocVersions]
-    page 'download', 'download', [category: 'Download', distributions: distributions]
-    page 'versioning', 'versioning', [category: 'Download']
-    page 'indy', 'indy', [category: 'Download']
+    page 'learn', 'learn', [category: 'Learn', videos: videos]
     page 'community', 'community', [category: 'Community']
-    page 'usergroups', 'usergroups', [category: 'Community', userGroups: usergroups]
-    page 'groovy-weekly', 'groovy-weekly', [category: 'Community']
-    page 'mailing-lists', 'mailing-lists', [category: 'Community']
-    page 'contribute', 'contribute', [category: 'Community']
-    page 'hipchat', 'hipchat', [category: 'Community']
     page 'sponsors', 'sponsors', [category: 'Community']
     page 'buildstatus', 'buildstatus', [category: 'Community']
     page 'faq', 'faq', [category: 'Documentation', docSections: documentationSections]
     page 'events', 'events', [category: 'Community', allEvents: allEvents]
-    page 'api', 'api', [category: 'Learn', iframeTarget: 'http://docs.groovy-lang.org/docs/next/html/gapi']
-    page 'gdk', 'gdk', [category: 'Learn', iframeTarget: 'http://docs.groovy-lang.org/docs/next/html/groovy-jdk']
-    page 'singlepagedocumentation', 'single-page-documentation', [category: 'Learn', iframeTarget: 'http://docs.groovy-lang.org/docs/next/html/documentation/']
-}
-
-documentation {
-    groovyDocumentationVersions([
-            '1.7.0', '1.7.1', '1.7.2', '1.7.3', '1.7.4', '1.7.5', '1.7.6', '1.7.7', '1.7.8', '1.7.9', '1.7.10', '1.7.11',
-            '1.8.0', '1.8.1', '1.8.2', '1.8.3', '1.8.4', '1.8.5', '1.8.6', '1.8.7', '1.8.8', '1.8.9',
-            '2.0.0', '2.0.1', '2.0.2', '2.0.3', '2.0.4', '2.0.5', '2.0.6', '2.0.7', '2.0.8',
-            '2.1.0', '2.1.1', '2.1.2', '2.1.3', '2.1.4', '2.1.5', '2.1.6', '2.1.7', '2.1.8', '2.1.9',
-            '2.2.0', '2.2.1', '2.2.2',
-            '2.3.0', '2.3.1', '2.3.2', '2.3.3', '2.3.4','2.3.5','2.3.6'])
-
-    section('Getting started','fa-graduation-cap') {
-        //          NAME                                     TARGET HTML         DOCPAGE HTML                       GENERATE
-        item 'Download Groovy',                             'download',         'download',                         false
-        item 'Install Groovy',                              'install',          'core-getting-started'
-        item 'Differences with Java',                       'differences',      'core-differences-java'
-        item 'The Groovy Development Kit',                  'groovy-dev-kit',   'core-gdk'
-        item 'Runtime and compile-time metaprogramming',    'metaprogramming',  'core-metaprogramming'
-        item 'The Grape dependency manager',                'grape',            'grape'
-        item 'Testing guide',                               'testing',          'core-testing-guide'
-        item 'Domain-Specific Languages',                   'dsls',             'core-domain-specific-languages'
-        item 'Security',                                    'security',         'security'
-        item 'Design patterns in Groovy',                   'design-patterns',  'design-pattern-in-groovy'
-    }
-
-    section ('Language Specification', 'fa-graduation-cap') {
-        item 'Syntax',              'syntax',               'core-syntax'
-        item 'Operators',           'operators',            'core-operators'
-        item 'Program structure',   'structure',            'core-program-structure'
-        item 'Object orientation',  'objectorientation',    'core-object-orientation'
-        item 'Closures',            'closures',             'core-closures'
-        item 'Semantics',           'semantics',            'core-semantics'
-    }
-
-    section ('Tools','fa-gears') {
-        item 'groovyc — the Groovy compiler',               'groovyc',          'tools-groovyc'
-        item 'groovysh — the Groovy command -like shell',   'groovysh',         'tools-groovysh'
-        item 'groovyConsole — the Groovy Swing console',    'groovyconsole',    'tools-groovyconsole'
-        item 'IDE integration', 'ides', 'tools-ide'
-    }
-
-    section('Groovy module guides', 'fa-cubes') {
-        item 'Parsing and producing JSON',          'json',             'json-userguide'
-        item 'Working with a relational database',  'databases',        'databases'
-        item 'Processing XML',                      'processing-xml',   'processing-xml'
-        item 'Scripting Ant tasks',                 'scripting-ant',    'scripting-ant'
-        item 'Template engines',                    'templating',       'template-engines'
-        item 'Creating Swing UIs',                  'swing',            'swing'
-        item 'Servlet support',                     'servlet',          'servlet'
-        item 'Working with JMX',                    'jmx',              'jmx'
-    }
-
-    section ('API documentation', 'fa-code') {
-        item 'GroovyDoc documentation of the Groovy APIs',  'api',    'api'
-        item 'The Groovy Development Kit enhancements',     'gdk',    'gdk'
-    }
-}
-
-downloads {
-    distribution('Groovy 2.4') {
-        description {
-            yield 'Groovy 2.4 is currently in beta testing. If you want a stable version, please choose Groovy 2.3 which is our latest official '
-            a(href: 'versioning.html', 'version')
-            yield ' of Groovy.'
-        }
-
-        version('2.4.0-beta-2') {
-            releaseNotes 'https://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10242&version=20433'
-        }
-    }
-    distribution('Groovy 2.3') {
-        description {
-            yield 'Groovy 2.3 is our latest official '
-            a(href: 'versioning.html', 'version')
-            yield ' of Groovy.'
-        }
-
-        version('2.3.6') {
-            stable true
-            releaseNotes 'https://jira.codehaus.org/secure/ReleaseNote.jspa?projectId=10242&version=20540'
-            windowsInstaller 'http://dl.bintray.com/groovy/Distributions/groovy-2.3.6-installer.exe'
-        }
-    }
-}
-
-ecosystem {
-    project('Grails') {
-        description 'Grails is an Open Source, full stack, web application framework for the JVM. It takes advantage of the Groovy programming language and convention over configuration to provide a productive and stream-lined development experience.'
-        url 'http://grails.org/'
-        logo 'img/ecosystem/grails.png'
-    }
-
-    project('Gradle') {
-        description 'Gradle is build automation evolved. Gradle can automate the building, testing, publishing, deployment and more of software packages or other types of projects such as generated static websites, generated documentation or indeed anything else.'
-        url 'http://gradle.org'
-        logo 'img/ecosystem/gradle.gif'
-    }
-
-    project('Spock') {
-        description 'Spock is a testing and specification framework for Java and Groovy applications. What makes it stand out from the crowd is its beautiful and highly expressive specification language. Thanks to its JUnit runner, Spock is compatible with most IDEs, build tools, and continuous integration servers.'
-        url 'https://code.google.com/p/spock/'
-        logo ''
-    }
-
-    project('GPars') {
-        description 'The GPars framework offers Java developers intuitive and safe ways to handle Java or Groovy tasks concurrently. Leveraging the enormous flexibility of the Groovy programing language and building on proven Java technologies, we aim to make concurrent programming for multi-core hardware intuitive, robust and enjoyable.'
-        url 'http://gpars.codehaus.org/'
-        logo 'img/ecosystem/gpars.png'
-    }
-
-    project('Ratpack') {
-        description 'Ratpack is a simple, capable, toolkit for creating high performance web applications.'
-        url 'http://www.ratpack.io/'
-        logo 'img/ecosystem/ratpack.png'
-    }
-
-    project('Griffon') {
-        description 'Griffon is an application framework for developing desktop applications in the JVM, with Groovy being the primary language of choice. Inspired by Grails, Griffon follows the Convention over Configuration paradigm, paired with an intuitive MVC architecture and a command line interface.'
-        url 'http://griffon.codehaus.org/'
-        logo 'img/ecosystem/griffon.png'
-    }
-
-    project('GVM') {
-        description 'GVM is a tool for managing parallel Versions of multiple Software Development Kits on most Unix based systems. It provides a convenient command line interface for installing, switching, removing and listing Candidates.'
-        url 'http://gvmtool.net/'
-        logo 'img/ecosystem/gvmtool.png'
-    }
+    page 'singlepagedocumentation', 'single-page-documentation', [category: 'tursfriend', iframeTarget: 'http://docs.groovy-lang.org/docs/next/html/documentation/']
 }
 
 allEvents {
@@ -249,129 +100,6 @@ allEvents {
     }
 }
 
-books {
-    book('Groovy in Action, 2nd edition') {
-        authors "Dierk König, Guillaume Laforge, Paul King, Cédric Champeau, Hamlet D'Arcy, Erik Pragt, and Jon Skeet"
-        cover 'img/books/regina.png'
-        url 'http://www.manning.com/koenig2/'
-        description 'The undisputed definitive reference on the Groovy programming language, authored by core members of the development team.'
-    }
-
-    book('Making Java Groovy') {
-        authors 'Ken Kousen'
-        cover 'img/books/Kousen-MJG.png'
-        url 'http://www.manning.com/kousen/'
-        description 'Make Java development easier by adding Groovy. Each chapter focuses on a task Java developers do, like building, testing, or working with databases or restful web services, and shows ways Groovy can help.'
-    }
-
-    book('Programming Groovy 2') {
-        authors 'Venkat Subramaniam'
-        cover 'img/books/vslg2.jpg'
-        url 'http://pragprog.com/book/vslg2/programming-groovy-2'
-        description 'Dynamic productivity for the Java developer'
-    }
-
-    book('Groovy 2 Cookbook') {
-        authors 'Andrey Adamovitch, Luciano Fiandeso'
-        cover 'img/books/g2cook.jpg'
-        url 'http://www.packtpub.com/groovy-2-cookbook/book'
-        description 'Over 90 recipes that provide solutions to everyday programming challenges using the powerful features of Groovy 2'
-    }
-
-    book('Groovy for Domain-Specific Languages') {
-        authors 'Fergal Dearle'
-        cover 'img/books/gdsl.jpg'
-        url 'http://www.packtpub.com/groovy-for-domain-specific-languages-dsl/book'
-        description 'Enhance and extend your Java applications with Domain-Specific Languages in Groovy'
-    }
-
-    book('Groovy Goodness Notebook') {
-        authors 'Hubert A. Klein Ikkink'
-        cover 'img/books/ggood.jpg'
-        url 'https://leanpub.com/groovy-goodness-notebook'
-        description 'Experience the Groovy programming language through code snippets. Learn more about (hidden) Groovy features with code snippets and short articles. The articles and code will get you started quickly and will give more insight in Groovy.'
-    }
-}
-
-usergroups {
-    // Europe
-    userGroup('Belgium Groovy/Grails User Group') {
-        location 'Europe/Belgium'
-        url 'http://www.meetup.com/Belgium-Groovy-Grails-User-Group/'
-    }
-    userGroup('Aarhus Groovy & Grails meetup - no homepage yet') {
-        location 'Europe/Denmark'
-    }
-    userGroup('Paris Groovy Grails User Group') {
-        location 'Europe/France'
-        url 'http://www.meetup.com/Belgium-Groovy-Grails-User-Group/'
-    }
-    userGroup('Groovy & Grails Israel User Group') {
-        location 'Europe/Israel'
-        url 'http://www.meetup.com/Groovy-Grails-Israel-Meetup-Group/'
-    }
-    userGroup('Warsaw Groovy User Group') {
-        location 'Europe/Poland'
-        url 'http://www.meetup.com/Warsaw-Groovy-User-Group/'
-    }
-    userGroup('Madrid Groovy User Group') {
-        location 'Europe/Spain'
-        url 'http://www.meetup.com/madrid-gug/'
-    }
-    userGroup('Dutch Groovy and Grails User Group (NLGUG)') {
-    	location 'Europe/The Netherlands'
-    	url 'http://www.meetup.com/nl-gug/'
-    }
-
-    // North-America
-    userGroup('Groovy Users of Minnesota') {
-        location 'North-America/United States'
-        url 'http://groovy.mn'
-    }
-    userGroup('Austin Groovy and Grails User Group (TX)') {
-        location 'North-America/United States'
-        url 'http://www.meetup.com/Austin-Groovy-and-Grails-Users/'
-    }
-    userGroup('Groovy and Grails Users of Columbus OH') {
-        location 'North-America/United States'
-        url 'http://www.meetup.com/Grails-and-Ales/'
-    }
-    userGroup('NYC Groovy / Grails Meetup') {
-        location 'North-America/United States'
-        url 'http://www.meetup.com/grails/'
-    }
-    userGroup('Scottsdale Groovy Brigade') {
-        location 'North-America/United States'
-        url 'http://www.scottsdale-groovy.com/'
-    }
-    userGroup('Coder Consortium of Sacramento') {
-        location 'North-America/United States'
-        url 'http://coderconsortium.com/'
-    }
-    userGroup('DC Groovy') {
-        location 'North-America/United States'
-        url 'http://www.dcgroovy.org'
-    }
-
-    // South-America
-    userGroup('Grails Brasil - Groovy and Grails users group of Brazil') {
-        location 'South-America/Brazil'
-        url 'http://www.grailsbrasil.com.br'
-    }
-
-    // Asia
-    userGroup('Bangalore Groovy Grails Meetup') {
-        location 'Asia/India'
-        url 'http://www.meetup.com/Bangalore-Groovy-Grails-Meetup/'
-    }
-    userGroup('Japan Grails/Groovy User Group') {
-        location 'Asia/Japan'
-        url 'http://www.jggug.org/'
-    }
-
-    // Oceania?
-    /* userGroup('') { location 'Oceania/Australia' } */
-}
 
 videos {
     video('Groovy in 2014 and beyond') {
