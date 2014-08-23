@@ -16,13 +16,13 @@ footer(id: 'footer') {
             }
             div(class: 'col-right') {
                 p {
-                    yield "The Groovy programming language"; br()
-                    yield "is supported by "; a(href: 'http://gopivotal.com', 'Pivotal'); br()
-                    yield "and the Groovy community"; br()
+                    yield "tursfriend a tour friend company"; br()
+                    yield "is supported by "; a(href: 'http://wwwfcporto.com', 'F. C . Porto'); br()
+                    yield "and friends"; br()
                 }
-                img(src: 'img/pivotal.png', title: 'Pivotal', alt: 'Pivotal')
+                img(src: 'img/pivotal.png', title: 'tursfriend', alt: 'tursfriend')
             }
         }
-        div(class: 'clearfix', "&copy; 2003-${Calendar.instance[Calendar.YEAR]} the Groovy project &mdash; Groovy is Open Source, ${$a(href: 'http://www.apache.org/licenses/LICENSE-2.0.html', 'Apache 2 License')}")
+        div(class: 'clearfix', "&copy; ${Calendar.instance[Calendar.YEAR]} the tursfriend company")
     }
 }
