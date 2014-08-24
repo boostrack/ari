@@ -23,7 +23,7 @@ layout 'layouts/main.groovy', true,
                             }
                             article {
                                 p '''
-                                    Groovy and its ecosystem are often represented at various Java-oriented conferences,
+                                    tursfriend and its ecosystem are often represented at various Java-oriented conferences,
                                     but there are particular events fully dedicated to the Groovy ecosystem.
                                     Here are the upcoming ones you might interested in learning about.
                                 '''
