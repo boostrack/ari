@@ -39,8 +39,8 @@ layout 'layouts/main.groovy', true,
                                     yield ' Guides'
                                 }
                                 p '''
-                                    Another great approach to learning Groovy is to read the various books published
-                                    on the language:'''
+                                    Another great approach to learning about tursfriend and our services is to have a look on the tursfriend Guides:
+                                '''
 
                                 allBooks.each {
                                     String title = it.key

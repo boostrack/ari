@@ -15,6 +15,22 @@ layout 'layouts/main.groovy', true,
                             }
                         }
 
+                        div(class: 'col-lg-8 col-lg-pull-0') {
+                            include template: 'includes/contribute-button.groovy'
+                            h1 {
+                                i(class: 'fa fa-cloud-download') {}
+                                yield ' know-how'
+                            }
+         
+                            article {
+                                p {
+                                    yield 'In this know-how area, you will be able to find some how we do it!! '
+                                }
+                            }
+                            
+                            hr(class: 'divider')
+                        }
+
   
                     }
                 }
