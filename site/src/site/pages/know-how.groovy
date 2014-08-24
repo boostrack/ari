@@ -24,7 +24,7 @@ layout 'layouts/main.groovy', true,
          
                             article {
                                 p {
-                                    yield 'In this know-how area, you will be able to find some how we do it!! '
+                                    include unescaped: 'html/know-how.html'
                                 }
                             }
                             
