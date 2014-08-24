@@ -8,6 +8,7 @@ menu {
 
     group('About') {
         item 'Sponsors',                    'sponsors.html'
+        item 'Customers',                   'customers.html'
         item 'FAQ',                         'faq.html'
         item 'Search',                      'search.html'
     }
@@ -26,6 +27,7 @@ pages {
     page 'know-how', 'know-how', [category: 'know-how']
     page 'clients', 'clients', [category: 'Clients']
     page 'events', 'events', [category: 'Events', allEvents: allEvents]
+    page 'customers', 'customers', [category: 'Customers']
     
     page 'sponsors', 'sponsors', [category: 'Sponsors']
     page 'faq', 'faq', [category: 'FAQ', docSections: documentationSections]
