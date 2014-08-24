@@ -23,10 +23,13 @@ menu {
 pages {
     page 'index', 'index', [allEvents: allEvents]
     page 'services', 'services', [category: 'Services', videos: videos]
-    page 'sponsors', 'sponsors', [category: 'Sponsors']
     page 'know-how', 'know-how', [category: 'know-how']
-    page 'faq', 'faq', [category: 'FAQ', docSections: documentationSections]
+    page 'clients', 'clients', [category: 'Clients']
     page 'events', 'events', [category: 'Events', allEvents: allEvents]
+    
+    page 'sponsors', 'sponsors', [category: 'Sponsors']
+    page 'faq', 'faq', [category: 'FAQ', docSections: documentationSections]
+
 }
 
 allEvents {

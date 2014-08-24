@@ -20,9 +20,8 @@ footer(id: 'footer') {
                     yield "is supported by "; a(href: 'http://www.fcporto.com', 'F. C . Porto'); br()
                     yield "and friends"; br()
                 }
-                img(src: 'img/pivotal.png', title: 'tursfriend', alt: 'tursfriend')
             }
         }
-        div(class: 'clearfix', "&copy; ${Calendar.instance[Calendar.YEAR]} the tursfriend company")
+        div(class: 'clearfix', "&copy; ${Calendar.instance[Calendar.YEAR]} - the <strong>tursfriend</strong> company")
     }
 }

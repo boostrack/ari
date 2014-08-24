@@ -11,13 +11,13 @@ layout 'layouts/main.groovy', true,
                         div(class: 'col-lg-3') {
                             ul(class: 'nav-sidebar') {
                                 li(class: 'active') {
-                                    a(href: '#') { strong('Learn') }
+                                    a(href: '#') { strong('Services') }
                                 }
                                 li {
-                                    a(href: '#books', class: 'anchor-link', 'Books')
+                                    a(href: '#guides', class: 'anchor-link', 'tursfriend Guides')
                                 }
                                 li {
-                                    a(href: '#videos', class: 'anchor-link', 'Presentations')
+                                    a(href: '#videos', class: 'anchor-link', 'tursfriend Presentations')
                                 }
                             }
                         }
@@ -26,32 +26,17 @@ layout 'layouts/main.groovy', true,
                             include template: 'includes/contribute-button.groovy'
                             h1 {
                                 i(class: 'fa fa-graduation-cap') {}
-                                yield ' Learn'
+                                yield ' Services'
                             }
                             article {
-                                p 'Welcome to the learning section of the Groovy website.'
-                                p """
-                                    First of all, you will need to ${$a(href: 'documentation.html#gettingstarted', 'get started')}
-                                    by installing Groovy on your system or project.
-                                """
-                                p """
-                                    Once all set up, we invite you to have a look at the Groovy
-                                    ${$a(href: 'documentation.html', 'documentation')}, which explains all the
-                                    ${$a(href: 'documentation.html#languagespecification', 'details of the language')}, such as how to use the
-                                    ${$a(href: 'documentation.html#tools', 'tools')}
-                                    that come with a Groovy installation, and how to tackle more complex tasks with the various
-                                    ${$a(href: 'documentation.html#groovymoduleguides', 'module user guides')}.
-                                """
-                                p """
-                                    But there are other ways to learn more about Groovy, thanks to ${$a(href: '#books', 'books')}
-                                    and ${$a(href: '#videos', 'presentations')} given about Groovy at conferences.
-                                """
+                                p 'Welcome to the Services section of the <strong>tursfriend</strong> website.'
+                         
                                 hr(class: 'divider')
 
-                                a(name: 'books') {}
+                                a(name: 'guides') {}
                                 h2 {
                                     i(class: 'fa fa-book') {}
-                                    yield ' Books'
+                                    yield ' Guides'
                                 }
                                 p '''
                                     Another great approach to learning Groovy is to read the various books published
@@ -94,19 +79,13 @@ layout 'layouts/main.groovy', true,
                                 a(name: 'videos') {}
                                 h2 {
                                     i(class: 'fa fa-film') {}
-                                    yield ' Presentations'
+                                    yield ' Videos'
                                 }
                                 p """
-                                    Many Groovy-related presentations have been recorded at ${$a(href: 'events.html', 'conferences')}
-                                    that you might wish to have a look at, to learn more about Groovy, delve into particular topics, and more.
+                                    Many videos of <strong>tursfriend</strong> activities have been recorded at ${$a(href: 'events.html', 'conferences')}
+                                    that you might wish to have a look at, to learn more about <strong>tursfriend</strong>, delve into particular topics, and more.
                                 """
-                                p """
-                                    Below are a few selected presentations given at the
-                                    ${$a(href: 'http://springone2gx.com/', 'SpringOne2GX')},
-                                    ${$a(href: 'http://gr8conf.eu/', 'GR8Conf')} and
-                                    ${$a(href: 'http://greach.es/', 'Greach')} conferences.
-                                """
-
+                                
                                 videos.each { Video video ->
                                     div(class: 'presentations') {
                                         a(href: video.videoUrl) {
@@ -137,20 +116,10 @@ layout 'layouts/main.groovy', true,
                                             }
                                         }
                                     }
+                                    hr(class: 'divider')
                                 }
 
-                                p "You can find more presentations:"
-                                ul {
-                                    li {
-                                        a(href: 'https://www.youtube.com/playlist?list=PLwxhnQ2Qv3xuE4JEKBpyE2AbbM_7G0EN1', 'GR8Conf Europe 2014 YouTube playlist')
-                                    }
-                                    li {
-                                        a(href: 'http://www.infoq.com/SpringOne-2GX-2013/presentations/24', 'SpringOne2GX 2013 / InfoQ presentations')
-                                    }
-                                    li {
-                                        a(href: 'https://www.youtube.com/playlist?list=PLXcHRe1w86EdmLLNs1chNt5QdEJb_skTj', 'Greach 2014 YouTube channel')
-                                    }
-                                }
+                              
                             }
                         }
                     }
