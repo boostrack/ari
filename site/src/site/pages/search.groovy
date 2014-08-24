@@ -13,7 +13,7 @@ layout 'layouts/main.groovy', true,
                                 yield ' Search'
                             }
                             p '''
-                                You can search the Groovy website, the Groovy documentation, and the Groovy APIs,
+                                You can search the tursfriend website, the tursfriend events, and the social networking,
                                 with the Google Custom Search box below. Please type your search query, and hit enter:'''
                             div {
                                 script '''

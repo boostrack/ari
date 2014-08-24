@@ -17,7 +17,7 @@ footer(id: 'footer') {
             div(class: 'col-right') {
                 p {
                     yield "tursfriend a tour friend company"; br()
-                    yield "is supported by "; a(href: 'http://wwwfcporto.com', 'F. C . Porto'); br()
+                    yield "is supported by "; a(href: 'http://www.fcporto.com', 'F. C . Porto'); br()
                     yield "and friends"; br()
                 }
                 img(src: 'img/pivotal.png', title: 'tursfriend', alt: 'tursfriend')
