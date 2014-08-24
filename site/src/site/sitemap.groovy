@@ -15,7 +15,7 @@ menu {
     group('Socialize') {
         item 'tursfriend on Twitter',       'https://twitter.com/hashtag/tursfriend',           'fa-twitter'
         item 'Events and conferences',      'events.html',                                      'fa-calendar'
-        item 'Google+ tursfriend Page',     'https://google.com/+groovy',                       'fa-google-plus'
+        item 'Google+ tursfriend Page',     'https://google.com/+tursfriend',                   'fa-google-plus'
         item 'Facebook tursfriend',         'http://www.facebook.com/tursfriend',               'fa-facebook'
     }
 }
@@ -40,7 +40,7 @@ allEvents {
         logo 'img/confs/gr8confus2014.png'
         description '''
             <p>
-                Tursfriend release prty - Fall 2014 
+                Tursfriend release package party - Fall 2014 
             </p>
         '''
     }

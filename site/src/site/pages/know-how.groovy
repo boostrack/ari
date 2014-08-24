@@ -9,11 +9,8 @@ layout 'layouts/main.groovy', true,
                                 li(class: 'active') {
                                     a(href: '#') { strong('know-how') }
                                 }
-                                docSections.each { section ->
-                                    li { a(href: "#${section.anchor}", class: 'anchor-link', section.name) }
-                                }
                                 li {
-                                    a(href: 'faq.html', 'FAQ')
+                                    a(href: 'faq.html', class: 'anchor-link', 'FAQ')
                                 }
                             }
                         }
