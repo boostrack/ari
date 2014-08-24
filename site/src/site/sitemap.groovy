@@ -4,6 +4,7 @@ menu {
         item 'know-how',                    'know-how.html'
         item 'Clients',                     'clients.html'
         item 'Events',                      'events.html'
+        item 'Angular',                     'angular.html'
     }
 
     group('About') {
@@ -21,11 +22,12 @@ menu {
 }
 
 pages {
-    page 'index', 'index', [allEvents: allEvents]
-    page 'services', 'services', [category: 'Services', videos: videos]
-    page 'know-how', 'know-how', [category: 'know-how']
-    page 'clients', 'clients', [category: 'Clients']
-    page 'events', 'events', [category: 'Events', allEvents: allEvents]
+    page 'index',       'index',    [allEvents: allEvents]
+    page 'services',    'services', [category: 'Services', videos: videos]
+    page 'know-how',    'know-how', [category: 'know-how']
+    page 'clients',     'clients',  [category: 'Clients']
+    page 'events',      'events',   [category: 'Events', allEvents: allEvents]
+    page 'angular',     'angular',  [category: 'Angular']
     
     page 'sponsors', 'sponsors', [category: 'Sponsors']
     page 'faq', 'faq', [category: 'FAQ', docSections: documentationSections]

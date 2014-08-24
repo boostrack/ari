@@ -23,7 +23,7 @@ html {
         title(pageTitle)
         link(href: "img/favicon.ico", type: "image/x-ico", rel: "icon")
         def styles = extraStyles ?: []
-        ['bootstrap.css', 'font-awesome.min.css', 'style.css', *styles].each {
+        ['bootstrap.css', 'font-awesome.min.css', 'style.css', 'angular/vendor.css', 'angular/main.css', *styles].each {
             link rel: 'stylesheet', type: 'text/css', href:
                     "css/$it"
         }
