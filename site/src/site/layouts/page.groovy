@@ -22,6 +22,7 @@ html {
         meta name: 'viewport', content: "width=device-width, initial-scale=1"
         title(pageTitle)
         link(href: "img/favicon.ico", type: "image/x-ico", rel: "icon")
+        link(href: "//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,600,300,700", type: "text/css", rel: "stylesheet")
         def styles = extraStyles ?: []
         ['bootstrap.css', 'font-awesome.min.css', 'style.css', *styles].each {
             link rel: 'stylesheet', type: 'text/css', href:
