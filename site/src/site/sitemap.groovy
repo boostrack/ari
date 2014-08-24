@@ -29,6 +29,7 @@ pages {
     
     page 'sponsors', 'sponsors', [category: 'Sponsors']
     page 'faq', 'faq', [category: 'FAQ', docSections: documentationSections]
+    page 'search', 'search', [category: 'Search']
 
 }
 
